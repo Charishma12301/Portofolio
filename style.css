@@ -1,0 +1,162 @@
+/* GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, Arial, sans-serif;
+}
+body {
+    background: #000;
+    color: white;
+}
+
+/* HERO SECTION */
+header {
+    height: 90vh;
+    background: url("images/bg.jpg") center/cover no-repeat;
+    position: relative;
+}
+.overlay {
+    background: rgba(0,0,0,0.65);
+    width: 100%; height: 100%;
+    position: absolute; top: 0; left: 0;
+}
+.hero-content {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.profile-img {
+    width: 150px; height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00eaff;
+}
+.hero-content h1 {
+    font-size: 35px;
+    margin-top: 15px;
+}
+.hero-content span {
+    color: #00eaff;
+}
+.hero-content p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+.buttons a {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #00eaff;
+    color: #00eaff;
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 10px;
+}
+.buttons a:hover {
+    background: #00eaff;
+    color: black;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 8%;
+    text-align: center;
+}
+h2 {
+    font-size: 30px;
+    color: #00eaff;
+    margin-bottom: 18px;
+}
+.about p {
+    width: 70%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 29px;
+    opacity: 0.9;
+}
+
+/* SKILLS */
+.skill-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+.card {
+    background: #111;
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: 1px solid #00eaff;
+    font-size: 18px;
+    transition: .3s;
+}
+.card:hover {
+    transform: scale(1.1);
+    background: #00eaff;
+    color: black;
+}
+
+/* PROJECTS */
+.project-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.project-card {
+    background: #111;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #00eaff;
+    transition: .3s;
+}
+.project-card:hover {
+    transform: scale(1.07);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #050505;
+}
+footer a {
+    color: #00eaff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.copy {
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    header {
+        height: 60vh;
+    }
+    .hero-content h1 {
+        font-size: 25px;
+    }
+    .hero-content p {
+        font-size: 14px;
+    }
+    .buttons a {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+    .skill-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .project-grid {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .about p {
+        width: 90%;
+    }
+}
